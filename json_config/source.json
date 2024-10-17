@@ -1,30 +1,69 @@
 [
     {
-        "category": "bootloader",
-        "id": "riscv-bootloader-vmlinux-5.10",
-        "description": "bootloader documentation.",
-        "is_zipped": false,
-        "md5sum": "ac29fe5f71c096e6b2044b4e4d623edc",
-        "url": "bootloader-vmlinux-5.10",
-        "resource_version": "1.0.0",
-        "gem5_versions": [
-            "develop",
-            "24.0"
-        ]
-    },
-    {
         "category": "disk-image",
         "id": "riscv-disk-img",
-        "description": "disk-image documentation.",
+        "description": "A simple RISCV disk image based on busybox.",
         "architecture": "RISCV",
+        "size": 11162360,
+        "tags": [
+            "fullsystem",
+            "riscv"
+        ],
         "is_zipped": true,
         "md5sum": "d6126db9f6bed7774518ae25aa35f153",
-        "url": "riscv-disk.img.gz",
-        "source": "src/riscv",
-        "root_partition": "1",
+        "source": "src/riscv-fs",
+        "url": "https://storage.googleapis.com/dist.gem5.org/dist/develop/images/riscv/busybox/riscv-disk.img.gz",
+        "code_examples": [
+            {
+                "example": "https://github.com/gem5/gem5/tree/develop/configs/example/gem5_library/riscv-fs.py",
+                "tested": false
+            }
+        ],
+        "license": "",
+        "author": [
+            "Ayaz Akram"
+        ],
+        "source_url": "https://github.com/gem5/gem5-resources/tree/develop/src/riscv-fs",
         "resource_version": "1.0.0",
         "gem5_versions": [
+            "23.0",
+            "23.1",
             "24.0"
-        ]
+        ],
+        "example_usage": "obtain_resource(resource_id=\"riscv-disk-img\")"
+    },
+    {
+        "category": "bootloader",
+        "id": "riscv-bootloader-vmlinux-5.10",
+        "description": "A RISCV bootloader kernel binary with linux 5.10.",
+        "architecture": "RISCV",
+        "size": 13813360,
+        "tags": [
+            "linux-kernel",
+            "fullsystem",
+            "riscv"
+        ],
+        "is_zipped": false,
+        "md5sum": "ac29fe5f71c096e6b2044b4e4d623edc",
+        "source": "src/riscv-fs",
+        "url": "https://storage.googleapis.com/dist.gem5.org/dist/develop/kernels/riscv/static/bootloader-vmlinux-5.10",
+        "code_examples": [
+            {
+                "example": "https://github.com/gem5/gem5/tree/develop/configs/example/gem5_library/riscv-fs.py",
+                "tested": false
+            }
+        ],
+        "license": "",
+        "author": [
+            "Ayaz Akram"
+        ],
+        "source_url": "https://github.com/gem5/gem5-resources/tree/develop/src/riscv-fs",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "23.0",
+            "23.1",
+            "24.0"
+        ],
+        "example_usage": "obtain_resource(resource_id=\"riscv-bootloader-vmlinux-5.10\")"
     }
 ]
