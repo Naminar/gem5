@@ -1,0 +1,8 @@
+{
+    "sources": {
+        "my-json-data-source": {
+            "url": "/home/namin/gem5/json_config/source.json",
+            "isMongo": false
+        }
+    }
+}

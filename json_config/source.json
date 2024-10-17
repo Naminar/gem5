@@ -1,0 +1,30 @@
+[
+    {
+        "category": "bootloader",
+        "id": "riscv-bootloader-vmlinux-5.10",
+        "description": "bootloader documentation.",
+        "is_zipped": false,
+        "md5sum": "ac29fe5f71c096e6b2044b4e4d623edc",
+        "url": "bootloader-vmlinux-5.10",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "develop",
+            "24.0"
+        ]
+    },
+    {
+        "category": "disk-image",
+        "id": "riscv-disk-img",
+        "description": "disk-image documentation.",
+        "architecture": "RISCV",
+        "is_zipped": true,
+        "md5sum": "d6126db9f6bed7774518ae25aa35f153",
+        "url": "riscv-disk.img.gz",
+        "source": "src/riscv",
+        "root_partition": "1",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.0"
+        ]
+    }
+]
